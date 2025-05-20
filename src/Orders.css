@@ -1,0 +1,135 @@
+/* Container for the orders page */
+.orders-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Title of the page */
+.orders-title {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Message when there are no orders */
+.empty-message {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+/* Container for the order cards */
+.order-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Each order card */
+.order-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header section of each order */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-header h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.order-header span {
+  font-size: 14px;
+  color: #777;
+}
+
+.expand-btn {
+  background-color: #f4f4f4;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.expand-btn:hover {
+  background-color: #ddd;
+}
+
+/* Body of the order that expands */
+.order-body {
+  padding-top: 15px;
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.order-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.item-info p strong {
+  color: #333;
+}
+
+.order-footer {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-image {
+    margin-bottom: 10px;
+  }
+
+  .expand-btn {
+    padding: 4px 8px;
+  }
+}

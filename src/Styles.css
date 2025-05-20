@@ -1,0 +1,135 @@
+/* General layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header/Navbar */
+  header.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0d6efd;
+    padding: 1rem 2rem;
+    color: rgb(229, 22, 132);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    background-color: white;
+    color: #225bb0;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #72f385;
+    border-color: #0d6efd;
+    transform: scale(1.05);
+  }
+  
+  /* Main content */
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0d6efd;
+    color: white;
+    font-size: 0.9rem;
+  }
+  /* Navbar container */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* First Row: Logo, Title, Search Bar */
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Ensures they stay in a row */
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  flex: 1;
+  text-align: center;
+}
+
+.search-bar {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 250px;
+}
+
+/* Second Row: Nav Links in a row */
+.navbar-bottom {
+  border-top: 1px solid #eee;
+  padding-top: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;       /* Force row layout */
+  flex-wrap: wrap;           /* Wrap if too long */
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #51f176;
+}
+
+  
